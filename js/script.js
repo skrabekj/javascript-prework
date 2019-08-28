@@ -7,7 +7,7 @@ function printMessage(msg){
 function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+var argMoveId, argPlayerMove, argComputerMove, /*computerMove, playerMove, randomNumber,*/ playerInput;
 var argButtonName, buttonpaper, buttonrock, buttonscissors, buttonTest;
 
 /**
@@ -20,6 +20,7 @@ buttonscissors = document.getElementById('button-scissors');
 buttonTest = document.getElementById('button-test');
 
 function buttonClicked(argButtonName) {
+	let playerMove, randomNumber, computerMove;
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
